@@ -244,7 +244,7 @@ sum.PKparams<-function(ds,start,end){
 }
 
 # Define server logic 
-shinyServer(function(input, output) {
+server <- function(input, output) {
   # disable the downdload button on page load
   shinyjs::disable("downloadCSV")
   shinyjs::disable("downloadPlot")
