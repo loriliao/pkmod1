@@ -406,7 +406,7 @@ server <- function(input, output) {
       ggsave(file, plot = plotInput(), device = "png")
     }
   )
-})
+}
 
 # Create Shiny app ----
-shinyApp(ui = ui, server = shinyServer)
+shinyApp(ui = ui, server = server)
